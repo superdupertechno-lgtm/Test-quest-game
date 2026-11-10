@@ -1,0 +1,30 @@
+/* 08-layout.css */
+html[data-o="p"][data-sh="1"] #stage{height:150px}
+html[data-o="p"][data-sh="1"] #pl{height:108px}
+html[data-o="p"][data-sh="1"] #foe{height:122px}
+html[data-o="p"][data-sh="1"] #nv{height:92px}
+html[data-o="p"][data-sh="1"] .sub,html[data-o="p"][data-sh="1"] details{display:none}
+html[data-o="l"] main{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) min(calc(calc(var(--vh)*100) - 24px),calc(var(--vw)*50));column-gap:12px;align-items:start}
+html[data-o="l"] main>*{grid-column:1}
+html[data-o="l"] #board{grid-column:2;grid-row:1/span 14;margin-top:0}
+html[data-o="l"] .sub,html[data-o="l"] details{display:none}
+html[data-o="l"] h1{font-size:16px}
+html[data-o="l"] #stage{height:min(150px,calc(var(--vh)*32))}
+html[data-o="l"] #pl{height:min(110px,calc(var(--vh)*25))}
+html[data-o="l"] #foe{height:min(125px,calc(var(--vh)*28))}
+html[data-o="l"] #nv{height:min(95px,calc(var(--vh)*21))}
+html[data-o="l"] #ab{margin-top:4px;padding:8px}
+html[data-o="l"] #log{min-height:18px}
+html[data-o="l"] #menu #mh{flex-direction:row;max-width:760px;gap:24px;text-align:left}
+html[data-o="l"] #mimg{height:min(calc(var(--vh)*70),260px)}
+html[data-o="l"] #mt{flex:1}
+html[data-o="l"] #dport{height:min(calc(var(--vh)*52),250px)}
+html[data-o="l"] #dt{min-height:3.2em}
+html[data-o="l"] #dbox{min-height:100px}
+html[data-o="p"] main{max-width:min(100%,520px)}
+html[data-o="p"] #board{width:min(100%,max(240px,calc(var(--vh)*100 - 330px)));margin-left:auto;margin-right:auto}
+html[data-o="l"] main{max-width:1100px;margin:0 auto;min-height:100%;align-content:center}
+html[data-o="p"] .hd span{display:none}
+html[data-o="p"] #board{width:min(100%,max(240px,calc(var(--vh)*100 - 366px)));margin-left:auto;margin-right:auto}
+html[data-o="p"][data-sh="0"] #board{width:min(100%,max(240px,calc(var(--vh)*100 - 426px)))}
+html[data-o="l"] #mimg{width:auto;height:min(calc(var(--vh)*72),300px)}

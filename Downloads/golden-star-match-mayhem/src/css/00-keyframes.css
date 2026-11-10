@@ -1,0 +1,26 @@
+/* 00-keyframes.css */
+@keyframes bob{50%{transform:translateY(-6px)}}
+@keyframes hit{25%{transform:translateX(-10px) skewX(6deg);filter:brightness(3)}60%{transform:translateX(6px)}}
+@keyframes act{40%{transform:scale(1.15) rotate(-4deg)}}
+@keyframes pop{to{transform:scale(1.5);opacity:0;filter:brightness(3)}}
+@keyframes fl{to{transform:translateY(-46px);opacity:0}}
+@keyframes rdy{50%{box-shadow:0 0 18px var(--gold)}}
+@keyframes tt{10%,80%{opacity:1}100%{opacity:0}}
+@keyframes tb{0%{transform:skewX(-8deg) scale(2.4)}25%{transform:skewX(-8deg) scale(1)}100%{transform:skewX(-8deg) scale(1.12)}}
+@keyframes bu{0%{transform:scale(.2);opacity:1}100%{transform:scale(30);opacity:0}}
+@keyframes sh{20%{transform:translate(-6px,3px)}40%{transform:translate(5px,-4px)}60%{transform:translate(-3px,2px)}}
+@keyframes act{40%{transform:translateX(-80px) scale(1.08)}}
+@keyframes cb{50%{opacity:0}}
+@keyframes ink{from{transform:scale(.3);opacity:.95}to{transform:scale(1.7);opacity:0}}
+@keyframes bn{from{opacity:1}to{opacity:0}}
+@keyframes sh2{20%{transform:translateY(9px)}40%{transform:translateY(-5px)}60%{transform:translateY(4px)}80%{transform:translateY(-2px)}}
+@keyframes sh3{10%{transform:translate(-5px,2px)}20%{transform:translate(6px,-3px)}30%{transform:translate(-6px,-2px)}40%{transform:translate(5px,3px)}50%{transform:translate(-4px,2px)}60%{transform:translate(4px,-2px)}70%{transform:translate(-3px,1px)}80%{transform:translate(2px,-1px)}}
+@keyframes rg{from{opacity:.9;transform:scale(.5)}to{opacity:0;transform:scale(9)}}
+@keyframes vin{0%{opacity:0;transform:scale(.8)}10%{opacity:1}14%{opacity:.2}18%{opacity:1}24%{opacity:.4}30%{opacity:1}100%{opacity:1;transform:scale(1)}}
+@keyframes shine{from{background-position:130% 0}to{background-position:-130% 0}}
+@keyframes spk{0%{opacity:0;transform:translateY(0)}20%{opacity:.9}100%{opacity:0;transform:translateY(-120px)}}
+@keyframes tp{to{outline-color:#fff;box-shadow:0 0 18px #f0c75e}}
+@keyframes hn{to{transform:scale(.86)}}
+@keyframes gr{0%{opacity:1;transform:translateX(-6px)}15%{transform:translateX(7px)}30%{opacity:.4}45%{opacity:1;transform:translateX(-3px)}100%{opacity:0}}
+@keyframes gl{25%{transform:translate(-4px,1px)}50%{transform:translate(4px,-1px)}75%{transform:translate(-2px,0)}}
+@keyframes stp{from{opacity:0;transform:rotate(-4deg) scale(2.2)}to{opacity:.9;transform:rotate(-4deg) scale(1)}}

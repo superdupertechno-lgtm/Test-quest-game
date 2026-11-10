@@ -1,0 +1,23 @@
+/* 06-fx.css */
+.fl{position:fixed;font:700 20px Georgia;color:#fff;text-shadow:0 0 8px var(--gold),0 2px 0 #000;pointer-events:none;animation:fl 1.2s ease-out forwards;z-index:40;white-space:nowrap}
+.lb{position:fixed;left:0;right:0;height:0;background:#000;z-index:20;transition:height .5s}
+body.cine .lb{height:calc(var(--vh)*15)}
+body.cine #board{filter:brightness(.35) saturate(.6)}
+#title{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:21;pointer-events:none;opacity:0;text-align:center}
+#title b{font:italic 800 clamp(34px,calc(var(--vw)*11),60px) Georgia,serif;color:var(--gold);text-shadow:0 0 24px var(--gold);transform:skewX(-8deg)}
+#title.go{animation:tt 2.4s ease-out}
+#title.go b{animation:tb 2.4s ease-out}
+#burst{position:fixed;left:50%;top:22%;width:40px;height:40px;margin:-20px;border-radius:50%;background:radial-gradient(#fff,var(--gold) 35%,transparent 70%);z-index:19;opacity:0;pointer-events:none}
+#burst.go{animation:bu 1.6s ease-out}
+.shake{animation:sh .35s}
+.pj{position:absolute;left:0;top:0}
+.orb{width:28px;height:28px;margin:-14px;border-radius:50%;background:radial-gradient(#fff,var(--gold) 45%,transparent 72%);box-shadow:0 0 18px 6px var(--gold)}
+.sw{width:58px;height:11px;margin:-6px -29px;background:linear-gradient(90deg,var(--gold) 0 10%,#dfe5f7 10%);clip-path:polygon(0 0,82% 0,100% 50%,82% 100%,0 100%);filter:drop-shadow(0 0 6px #fff)}
+.ax{width:66px;height:66px;margin:-33px;background:conic-gradient(from 200deg,var(--gold),#fff,var(--gold));clip-path:polygon(50% 0,100% 20%,84% 50%,100% 80%,50% 100%,42% 56%,0 56%,0 44%,42% 44%);filter:drop-shadow(0 0 8px var(--gold))}
+.bl{width:24px;height:4px;margin:-2px;background:#ffd36b;box-shadow:0 0 8px #ffb}
+.ring{position:absolute;width:30px;height:30px;margin:-15px;border:3px solid #fff;border-radius:50%;box-shadow:0 0 14px var(--gold);pointer-events:none}
+#title b{font-style:normal;letter-spacing:.08em;color:#d6b45c}
+#board.burn:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 40px 14px rgba(235,95,20,.9);animation:bn .8s forwards;z-index:3}
+body.cine .lb{height:calc(var(--vh)*15)}
+.sh2{animation:sh2 .4s}
+.sh3{animation:sh3 .5s}

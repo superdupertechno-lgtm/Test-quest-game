@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Golden Star: Match Mayhem (Beta 0.3)</title>
+<meta name="description" content="Golden Star: Match Mayhem - a Volta Chronicles match-3 brawler by Super Duper Techno. Beta 0.3.">
+<meta name="theme-color" content="#05070a">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Match Mayhem">
+<meta property="og:type" content="website"><meta property="og:title" content="Golden Star: Match Mayhem (Beta 0.3)"><meta property="og:description" content="A Volta Chronicles match-3 brawler by Super Duper Techno."><meta property="og:image" content="https://testpuzzle.superdupertechno.com/og.png"><meta property="og:url" content="https://testpuzzle.superdupertechno.com/">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://testpuzzle.superdupertechno.com/og.png">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" href="icons/favicon.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+<link rel="stylesheet" href="css/00-keyframes.css">
+<link rel="stylesheet" href="css/01-base.css">
+<link rel="stylesheet" href="css/02-stage.css">
+<link rel="stylesheet" href="css/03-board.css">
+<link rel="stylesheet" href="css/04-hud.css">
+<link rel="stylesheet" href="css/05-menus.css">
+<link rel="stylesheet" href="css/06-fx.css">
+<link rel="stylesheet" href="css/07-intro.css">
+<link rel="stylesheet" href="css/08-layout.css">
+<link rel="stylesheet" href="css/09-cutscene.css">
+<link rel="stylesheet" href="css/10-progress.css">
+</head><body><div id="app"><div id="page">
+<main id="m">
+<div class="hd"><h1>Golden Star: Match Mayhem</h1><span>Vol. II · Beta 0.3</span><button id="mb">❚❚ Pause</button></div>
+<div id="stage"><div id="tag"></div><div id="stamp">ACTIVE FILE</div><div id="bub">…</div>
+<img id="pl" alt=""><div id="foe"><img id="fi" alt=""></div><img id="nv" alt=""><div id="fx"></div><div id="flash"></div></div>
+<div class="bar"><i id="eb" style="background:var(--red)"></i></div>
+<div class="row"><span id="eh"></span><span id="weak"></span></div>
+<div id="turn"></div>
+<div id="board"></div>
+<button id="ab">NOVA STRIKE</button>
+<div class="bar"><i id="pb" style="background:var(--grn)"></i></div>
+<div class="row"><span id="ph"></span><span id="sh"></span></div>
+<div id="log"></div>
+<details><summary>Color powers (match 4+ for a special, 5+ clears the color)</summary>
+Strike length: 3 kick, 4 energy blast, 5 thrown sword, 6+ giant axe.<br>◆ Golden Star: strike. 4+: Star Bolt, +10 dmg.<br>✚ Madam Volta: heal. 4+: Rescue, +10 heal.<br>■ D.Dogs: shield. 4+: Fortify, +10 shield and +5 dmg.<br>★ Nova: charge. 4+: Scoop, enemy loses next turn.<br>⬢ Requener: strike. 4+: Hunt Mark, your next hit is double.</details>
+</main></div>
+<div class="lb" id="lb1"></div><div class="lb" id="lb2"></div>
+<div id="title"><b>NOVA STRIKE</b><span>Golden Star. No more running.</span></div><div id="burst"></div>
+<div id="ov"><div><small id="os"></small><h2 id="oh"></h2><p id="ot"></p><button id="ob"></button></div></div>
+<div id="intro"><div id="itap">TAP TO BEGIN</div><div class="bars bt"></div><div class="bars bb"></div><div id="sparks"></div><div id="scan"></div>
+<div class="is" id="s1"><div id="term"><p id="ld">breaching in...</p><div id="lbar"><i id="lfill"></i></div><span id="lpct">0%</span><div id="tlog"></div><div id="nodes"></div></div>
+<div id="grant">ACCESS GRANTED</div>
+<div id="brand"><p class="cap">CREATED AND PRESENTED BY</p><div id="sdt"><img class="pc" id="pS" alt=""><img class="pc" id="pJ" alt=""><img class="pc" id="pT" alt=""><div id="ring"></div></div><p id="sdtn"></p><p id="inn">// you're in.</p></div></div>
+<div class="is" id="s2"><p class="cap">A STORY OF</p><div class="vcm" id="vcm"></div><div id="vct"><span class="hl hide" id="vV">V</span><span id="vA"></span><span id="vsp"></span><span class="hl hide" id="vC">C</span><span id="vB"></span></div><p id="tag2"></p><div id="stamps"><span class="stamp" id="st1">FILE 2006 - PRESENT</span><span class="stamp" id="st2">SEALED</span></div><p id="gname">GOLDEN STAR: MATCH MAYHEM</p><p id="beta">BETA 0.3</p></div>
+<div id="iflash"></div><button id="iskip">Skip</button></div>
+<div id="menu"><div id="mh"><img id="mimg" alt=""><div id="mt"><div class="vcm" id="mlogo"></div><small>CASE FILE · DESPAIR EDITION</small><h2>GOLDEN STAR<span class="sub2">MATCH MAYHEM</span></h2><p>Match tiles. Take down the Accord's hired muscle.</p>
+<div id="pages">
+<div class="pg" id="pg-main"><button id="m2" style="display:none">Continue story</button><button id="m1" class="pri">Play</button><button id="m6">Upgrades</button><button id="m3">Settings</button><button id="m4">How to play</button><button id="m5">Extras</button></div>
+<div class="pg" id="pg-play"><button id="b1" class="pri">New story</button><button id="b2" style="display:none">Continue story</button><button id="b7">Endless mode</button><button class="soon" disabled>Multiplayer coming soon</button><button class="bk">← Back</button></div>
+<div class="pg" id="pg-settings"><button id="b5"></button><button id="b6"></button><button id="b8">Fullscreen</button><button id="b9">Reset progress</button><button class="bk">← Back</button></div>
+<div class="pg" id="pg-how"><div class="how">Swipe or tap two neighbors to swap and match 3+. On keyboard: arrows move, Enter selects. On a gamepad: stick or D-pad, A selects, Start pauses.<br>◆ strike · ✚ heal · ■ shield · ★ charge · ⬢ strike.<br>Match 3: kick. 4: energy blast + color special. 5: thrown sword + color surge. 6+: giant axe.<br>Fill the gold bar for Nova Strike. The enemy takes turns on the same board.</div><button id="b10">Replay tutorial</button><button class="bk">← Back</button></div>
+<div class="pg" id="pg-up"><div class="tabs2"><button id="ut1" class="on">Golden Star</button><button id="ut2">Nova</button></div><div id="uphead"></div><div id="uplist"></div><button id="upreset">Respec (free refund)</button><button class="bk">← Back</button></div>
+<div class="pg" id="pg-extras"><button class="soon" disabled>More characters coming soon</button><button class="soon" disabled>Story update coming soon</button><button id="b11">Credits</button><button class="bk">← Back</button></div>
+<div class="pg" id="pg-credits"><div class="how">GOLDEN STAR: MATCH MAYHEM<br>A Volta Chronicles story.<br>Created and presented by Super Duper Techno.<br>Beta 0.3<br><br>Team credits: to be added.</div><button class="bk">← Back</button></div>
+</div>
+<span class="ft">BETA 0.3 · Super Duper Techno</span></div></div></div>
+<div id="cut"><div id="cbg" class="night"><div class="csky"></div><div class="cmoon"></div><div class="csk csk1"></div><div class="csk csk2"></div><div id="cact"></div></div><div class="cbar cbt"></div><div class="cbar cbb"></div><div id="cfl"></div><div id="cttl"></div><div id="ccap"><b id="csp"></b><p id="ctx"></p></div><button id="cskip">Skip</button></div>
+<div id="pause"><div><small>PAUSED</small><h2>GAME PAUSED</h2><div class="pbtns"><button id="p1">Resume</button><button id="p2">Restart fight</button><button id="p6">Upgrades</button><button id="p3">Settings</button><button id="p4">How to play</button><button id="p5">Quit to main menu</button></div></div></div>
+<div id="chs"><div><small id="cs">DECISION</small><h2 id="cq"></h2><div id="co"></div></div></div>
+<div id="tcard"><b id="tt"></b><p id="tp"></p><div><button id="tn">Next</button><button id="tk">Skip tutorial</button></div></div>
+<div id="dlg"><img id="dport" alt=""><div id="dbox"><button id="dsk">Skip</button><div id="dn"></div><p id="dt"></p><span id="dgo">tap ▸</span></div></div>
+</div><script src="js/00-assets.js"></script>
+<script src="js/10-core.js"></script>
+<script src="js/20-audio.js"></script>
+<script src="js/25-state.js"></script>
+<script src="js/30-board.js"></script>
+<script src="js/35-effects.js"></script>
+<script src="js/40-dialogue.js"></script>
+<script src="js/45-tutorial.js"></script>
+<script src="js/50-story.js"></script>
+<script src="js/55-endless.js"></script>
+<script src="js/60-nav.js"></script>
+<script src="js/62-cutscenes.js"></script>
+<script src="js/65-progress.js"></script>
+<script src="js/70-intro.js"></script>
+<script src="js/99-main.js"></script>
+</body></html>

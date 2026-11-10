@@ -1,0 +1,59 @@
+{
+  "name": "golden-star-match-mayhem",
+  "version": "0.3.2",
+  "description": "Golden Star: Match Mayhem - a Volta Chronicles match-3 brawler by Super Duper Techno",
+  "main": "store/desktop/main.js",
+  "private": true,
+  "scripts": {
+    "sync:web": "node scripts/sync-web.js",
+    "serve": "python3 -m http.server 8000 --directory dist",
+    "android:add": "npx cap add android",
+    "android:sync": "npm run sync:web && npx cap sync android",
+    "android:open": "npx cap open android",
+    "desktop": "npm run sync:web && electron .",
+    "desktop:build": "npm run sync:web && electron-builder",
+    "build": "node build.js",
+    "assets": "node tools/gen-assets.js",
+    "dev": "python3 -m http.server 8000 --directory src"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.0"
+  },
+  "build": {
+    "appId": "com.superdupertechno.goldenstar",
+    "productName": "Golden Star Match Mayhem",
+    "files": [
+      "store/desktop/**",
+      "www/**",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "dir",
+        "zip"
+      ],
+      "icon": "icons/icon-512.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "icons/icon-512.png",
+      "category": "Game"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "icons/icon-512.png",
+      "category": "public.app-category.games"
+    }
+  }
+}

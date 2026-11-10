@@ -1,0 +1,10 @@
+/* 10-progress.css - Upgrades page */
+.tabs2{display:flex;gap:6px}.tabs2 button{flex:1;min-height:40px!important}.tabs2 .on{background:var(--gold)!important;color:#1a1203!important}
+#uphead{font-size:12px;line-height:1.55;color:var(--ink);border:1px dashed var(--line);padding:10px 12px;text-align:left}
+#uphead b{color:var(--gold)}#uphead span{color:var(--mut);font-size:11px}
+.xpb{height:8px;background:#050403;border:1px solid var(--line);margin:6px 0}.xpb i{display:block;height:100%;background:var(--gold)}
+#uplist{display:flex;flex-direction:column;gap:6px;max-height:calc(var(--vh)*42);overflow-y:auto}
+.urow{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:8px 10px;background:rgba(201,162,74,.05)}
+.ui{flex:1;text-align:left}.ui b{color:var(--gold);font-size:13px;display:block}.ui span{display:block;font-size:11px;color:var(--mut);line-height:1.35}.ui em{font-style:normal;color:var(--gold);font-size:11px;letter-spacing:.08em}
+.ub{min-width:52px;min-height:44px!important;padding:6px!important}.ub:disabled{opacity:.35}
+#co h2,#cq{white-space:normal}

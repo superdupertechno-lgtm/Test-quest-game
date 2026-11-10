@@ -1,0 +1,15 @@
+/* 04-hud.css */
+.bar{height:9px;background:#080b14;overflow:hidden;margin:4px 0 5px;border:1px solid var(--line)}
+.bar i{display:block;height:100%;transition:width .35s}
+.row{display:flex;justify-content:space-between;font-size:12px;color:var(--mut)}
+#turn{text-align:center;font:700 12px system-ui;letter-spacing:.06em;margin:6px 0 0;color:var(--gold);min-height:16px}
+#ab{width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);font:700 14px system-ui;color:var(--ink);background:linear-gradient(90deg,#6a4d12 var(--p,0%),var(--pan) var(--p,0%))}
+#ab.rdy{background:var(--gold);color:#241800;animation:rdy 1s infinite}
+#log{min-height:34px;margin-top:5px;font-size:12px;color:var(--mut)}
+.bar{border:1px solid var(--line);background:#050403}
+#ab{border:1px dashed var(--line);letter-spacing:.04em}
+#ab.rdy{color:#1a1203}
+#turn{letter-spacing:.14em}
+#turn{margin:4px 0 0;min-height:14px}
+#log{min-height:16px;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ab{padding:8px;margin-top:5px}

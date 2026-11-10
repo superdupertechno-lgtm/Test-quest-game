@@ -1,0 +1,26 @@
+/* 09-cutscene.css */
+#cut{position:fixed;inset:0;z-index:68;display:none;background:#000;overflow:hidden}
+#cbg{position:absolute;inset:0;transition:transform var(--zd,1.2s) ease-in-out;transform-origin:50% 70%}
+.csky{position:absolute;inset:0;background:linear-gradient(#0a0f26,#1b2150 60%,#2a2316)}
+#cbg.dawn .csky{background:linear-gradient(#2b1a3a,#c9743c 55%,#f0c75e)}
+#cbg.roof .csky{background:linear-gradient(#05060c,#14102a 60%,#1c1208)}
+#cbg.red .csky{background:linear-gradient(#150506,#3a0f0f 60%,#1a0a07)}
+#cbg.gray .csky{background:linear-gradient(#0d0e11,#2a2c31 60%,#17171a)}
+.cmoon{position:absolute;right:14%;top:14%;width:16%;aspect-ratio:1;border-radius:50%;background:radial-gradient(#fff6d0,#f0c75e 60%,transparent 70%);opacity:.75}
+.csk{position:absolute;left:-12%;right:-12%;bottom:0;clip-path:polygon(0 100%,0 62%,4% 62%,4% 45%,8% 45%,8% 58%,12% 58%,12% 30%,15% 30%,15% 12%,16% 12%,16% 30%,19% 30%,19% 52%,24% 52%,24% 40%,28% 40%,28% 60%,33% 60%,33% 35%,37% 35%,37% 55%,42% 55%,42% 25%,45% 25%,45% 8%,46% 8%,46% 25%,50% 25%,50% 50%,55% 50%,55% 38%,59% 38%,59% 58%,64% 58%,64% 28%,68% 28%,68% 48%,73% 48%,73% 36%,77% 36%,77% 56%,82% 56%,82% 20%,85% 20%,85% 5%,86% 5%,86% 20%,90% 20%,90% 52%,95% 52%,95% 42%,100% 42%,100% 100%)}
+.csk1{height:52%;background:#0b0d18;opacity:.92;animation:cpar1 30s linear infinite alternate}
+.csk2{height:34%;background:#040405;animation:cpar2 18s linear infinite alternate}
+#cact{position:absolute;inset:0}
+.ca{position:absolute;bottom:20%;transform:translateX(-50%);transition:left var(--d,1s) ease-in-out,bottom .4s ease-out;pointer-events:none;filter:drop-shadow(0 8px 10px rgba(0,0,0,.6))}
+.ca img{height:100%;display:block}.ca.walk img{animation:cwalk .35s ease-in-out infinite}
+.cbar{position:absolute;left:0;right:0;height:11%;background:#000}.cbt{top:0}.cbb{bottom:0}
+#cfl{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+#cttl{position:absolute;left:0;right:0;top:38%;text-align:center;font:700 clamp(24px,8vw,44px) "Courier New",monospace;letter-spacing:.2em;color:#f0c75e;text-shadow:0 0 22px rgba(240,199,94,.7);opacity:0;padding:0 12px}
+#ccap{position:absolute;left:0;right:0;bottom:11%;padding:18px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.88) 35%);min-height:96px;pointer-events:none}
+#csp{color:#f0c75e;font:700 12px "Courier New",monospace;letter-spacing:.14em}
+#ctx{margin:4px 0 0;font:14px/1.5 "Courier New",monospace;color:#e6d6aa;min-height:3em}
+#cskip{position:absolute;right:12px;top:calc(11% + 8px);z-index:3;background:none;border:1px dashed #4d3f22;color:#9a8860;font:12px "Courier New",monospace;padding:6px 12px;min-height:34px}
+.cshake{animation:cshk .45s}
+@keyframes cpar1{to{transform:translateX(-4%)}}@keyframes cpar2{to{transform:translateX(-8%)}}
+@keyframes cwalk{50%{transform:translateY(-3%)}}
+@keyframes cshk{20%{transform:translate(-8px,4px)}40%{transform:translate(7px,-5px)}60%{transform:translate(-4px,3px)}}

@@ -1,0 +1,41 @@
+/* 02-stage.css */
+#stage{margin-top:8px;height:158px;position:relative;border:1px solid var(--line);background:linear-gradient(#1a2038,#0e121f);overflow:hidden;display:flex;justify-content:center;align-items:flex-end}
+#stage:before{content:"";position:absolute;inset:auto 0 0;height:45%;background:#080b14;clip-path:polygon(0 70%,6% 30%,14% 55%,24% 5%,34% 45%,44% 20%,52% 60%,64% 0,74% 40%,84% 15%,92% 50%,100% 25%,100% 100%,0 100%)}
+#tag{position:absolute;left:8px;top:6px;font:700 13px Georgia,serif}
+#tag small{display:block;font:11px system-ui;color:var(--mut)}
+#stamp{position:absolute;right:8px;top:8px;border:2px solid var(--red);color:var(--red);font:700 10px system-ui;padding:1px 5px;transform:rotate(6deg);letter-spacing:.08em}
+#foe{position:relative;width:92px;height:118px;animation:bob 2.6s ease-in-out infinite;transform-origin:50% 100%}
+#foe svg{width:100%;height:100%;overflow:visible}
+#foe.hit{animation:hit .3s}
+#foe.act{animation:act .5s}
+#foe.die{animation:none;transition:all 1.6s cubic-bezier(.2,.7,.3,1);opacity:0;filter:blur(8px) brightness(3);transform:scale(1.4) translateY(-20px)}
+#bub{position:absolute;left:calc(50% + 34px);top:14px;background:#e9ecf5;color:#10131c;border-radius:12px;padding:3px 10px;font:700 15px Georgia;opacity:0;transition:opacity .2s;min-width:44px;text-align:center}
+#bub:after{content:"";position:absolute;left:-5px;bottom:5px;border:6px solid transparent;border-right-color:#e9ecf5;border-left:0}
+#bub.on{opacity:1}
+@media (prefers-reduced-motion:reduce){#foe{animation:none}}
+#stage{height:210px;display:block}
+#pl{position:absolute;left:5%;bottom:6px;height:150px;transition:transform .2s;transform-origin:50% 100%;z-index:2}
+#pl.big{transform:scale(1.35) translateX(50px)}
+#foe{position:absolute;right:5%;bottom:6px;width:auto;height:170px;z-index:2}
+#foe img{height:100%;display:block}
+#bub{left:auto;right:calc(5% + 40px);top:6px;z-index:6}
+#bub:after{left:auto;right:6px;bottom:-9px;border:6px solid transparent;border-top-color:#e9ecf5;border-bottom:0}
+#fx{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+#nv{position:absolute;left:36%;bottom:6px;height:130px;opacity:0;pointer-events:none;z-index:3}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:7}
+#stage{background:linear-gradient(#2c2415,#0d0b07);border:1px solid var(--line);box-shadow:inset 0 0 40px #000}
+#stage:before{background:#060504}
+#pl,#fi,#nv{filter:sepia(.35) saturate(.85) contrast(1.08) brightness(.95)}
+#stamp{color:#b8472f;border-color:#b8472f;font-weight:700;letter-spacing:.14em}
+#stage{background:radial-gradient(circle at 15% 30%,rgba(140,95,30,.28),transparent 30%),radial-gradient(circle at 85% 20%,rgba(100,65,20,.25),transparent 30%),repeating-linear-gradient(90deg,rgba(201,162,74,.06) 0 1px,transparent 1px 12%),linear-gradient(#2c2415,#0d0b07);box-shadow:inset 0 0 40px 12px #000,inset 0 0 0 2px #2b2110}
+#foe:before{content:"\2715";position:absolute;left:50%;bottom:-16px;transform:translateX(-50%) rotate(-8deg);font:700 42px "Courier New",monospace;color:#b8472f;opacity:.6;z-index:-1;text-shadow:0 0 6px #000}
+#foe{display:flex;align-items:flex-end}
+#foe.boss img{height:122%}
+#flash2{position:absolute;inset:0;background:#fff;opacity:0}
+#stage{background:radial-gradient(circle at 50% 28%,rgba(201,162,74,.2),transparent 55%),linear-gradient(#1a1608,#070604);box-shadow:inset 0 0 40px 12px #000,inset 0 0 0 2px #3a2e17}
+#stage:before{background:#050403;height:58%;clip-path:polygon(0 100%,0 62%,4% 62%,4% 45%,8% 45%,8% 58%,12% 58%,12% 30%,15% 30%,15% 12%,16% 12%,16% 30%,19% 30%,19% 52%,24% 52%,24% 40%,28% 40%,28% 60%,33% 60%,33% 35%,37% 35%,37% 55%,42% 55%,42% 25%,45% 25%,45% 8%,46% 8%,46% 25%,50% 25%,50% 50%,55% 50%,55% 38%,59% 38%,59% 58%,64% 58%,64% 28%,68% 28%,68% 48%,73% 48%,73% 36%,77% 36%,77% 56%,82% 56%,82% 20%,85% 20%,85% 5%,86% 5%,86% 20%,90% 20%,90% 52%,95% 52%,95% 42%,100% 42%,100% 100%)}
+#stage:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,#7a5518,#c9a24a 40%,#fff1b8 50%,#c9a24a 60%,#7a5518);-webkit-mask:var(--m) 50% 32%/42% no-repeat;mask:var(--m) 50% 32%/42% no-repeat;opacity:.1;pointer-events:none}
+#stamp{z-index:4}
+#tag{z-index:4;max-width:62%}
+#tag small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#foe.boss img{height:104%}
