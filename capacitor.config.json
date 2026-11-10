@@ -1,0 +1,8 @@
+{
+  "appId": "com.superdupertechno.goldenstar",
+  "appName": "Golden Star: Match Mayhem",
+  "webDir": "www",
+  "backgroundColor": "#05070a",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}
